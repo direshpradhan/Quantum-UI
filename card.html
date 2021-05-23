@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="components/components.css" />
+    <link rel="icon" href="./static/images/logo3.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a class="link" href="./index.html">
+          <div class="brand-name">
+            <img class="img-logo" src="./static/images/logo3.png" />
+            <span class="navbrand">Quantum UI</span>
+          </div>
+        </a>
+        <!-- <ul class="list-non-bullet">
+                <li class="list-item-inline"><a class="link" href="#">Home</a></li>
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Docs</a></li>
+                <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
+            </ul> -->
+      </nav>
+      <div class="sidebar">
+        <h4 style="text-align: center">
+          <a class="link" href="intro.html">Introduction</a>
+        </h4>
+        <h4 style="text-align: center">Components</h4>
+        <ul class="list-non-bullet list-sidebar">
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./alert.html">Alert</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./avatar.html">Avatar</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./badge.html">Badge</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./button.html">Button</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link link-active" href="./card.html">Card</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./grid.html">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./image.html">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./input.html">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./modal.html">Modal</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./navigation.html">Navigation</a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="./text-utilities.html"
+              >Text Utilities</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="component-desc">
+        <h2 class="heading">Card</h2>
+        <div class="description">
+          Card is a pattern which groups information about a particular product
+          or topic. It also contains some action for user to interact.
+        </div>
+        <div class="divider"></div>
+        <h4 class="heading">Normal Card</h4>
+        <div style="align-self: center" class="card">
+          <img
+            class="card-img"
+            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg"
+            alt=""
+          />
+          <div class="card-text">
+            <div class="card-title">
+              <h4>HERE&NOW</h4>
+              <span class="material-icons-outlined">favorite_border</span>
+            </div>
+            <p class="card-description">Men Printed Round Neck T-shirt</p>
+            <p class="card-price">Rs. 500</p>
+          </div>
+          <div>
+            <button class="btn btn-primary-outline">Add to Cart</button>
+          </div>
+        </div>
+        <div class="carbon-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2509%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2509%253Ch4%2520class%253D%2522card-title%2522%253EHERE%2526NOW%253C%252Fh4%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-description%2522%253EMen%2520Printed%2520Round%2520Neck%2520T-shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price%2522%253ERs.%2520500%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 245px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <div class="divider"></div>
+        <h4 class="heading">Card with badges</h4>
+        <div style="align-self: center" class="card">
+          <img
+            class="card-img"
+            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg"
+            alt=""
+          />
+          <div class="card-text">
+            <div class="card-title">
+              <h4>HERE&NOW</h4>
+              <span class="material-icons-outlined">favorite_border</span>
+            </div>
+            <p class="card-description">Men Printed Round Neck T-shirt</p>
+            <p class="card-price">Rs. 500</p>
+          </div>
+          <div>
+            <button class="btn btn-primary-outline">Add to Cart</button>
+          </div>
+          <span class="badge card-badge">New</span>
+        </div>
+
+        <div class="carbon-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2509%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2509%253Ch4%2520class%253D%2522card-title%2522%253EHERE%2526NOW%253C%252Fh4%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-description%2522%253EMen%2520Printed%2520Round%2520Neck%2520T-shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price%2522%253ERs.%2520500%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522badge%2520card-badge%2522%253ENew%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 245px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <div class="divider"></div>
+        <h4 class="heading">Card with dismiss</h4>
+        <div style="align-self: center" class="card">
+          <img
+            class="card-img"
+            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg"
+            alt=""
+          />
+          <div class="card-text">
+            <div class="card-title">
+              <h4>HERE&NOW</h4>
+              <span class="material-icons-outlined">favorite_border</span>
+            </div>
+            <p class="card-description">Men Printed Round Neck T-shirt</p>
+            <p class="card-price">Rs. 500</p>
+          </div>
+          <div>
+            <button class="btn btn-primary-outline">Add to Cart</button>
+          </div>
+          <span class="badge card-badge">New</span>
+          <span class="card-dismiss"
+            ><img src="./static/images/close.svg" alt=""
+          /></span>
+        </div>
+
+        <div class="carbon-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2509%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2509%253Ch4%2520class%253D%2522card-title%2522%253EHERE%2526NOW%253C%252Fh4%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-description%2522%253EMen%2520Printed%2520Round%2520Neck%2520T-shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price%2522%253ERs.%2520500%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522badge%2520card-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-dismiss%2522%253E%253Cimg%2520src%253D%2522.%252Fstatic%252Fimages%252Fclose.svg%2522%2520alt%253D%2522%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 264px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <div class="divider"></div>
+        <h4 class="heading">Card with shadow</h4>
+        <div style="align-self: center" class="card card-shadow">
+          <img
+            class="card-img"
+            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg"
+            alt=""
+          />
+          <div class="card-text">
+            <div class="card-title">
+              <h4>HERE&NOW</h4>
+              <span class="material-icons-outlined">favorite_border</span>
+            </div>
+            <p class="card-description">Men Printed Round Neck T-shirt</p>
+            <p class="card-price">Rs. 500</p>
+          </div>
+          <div>
+            <button class="btn btn-primary-outline">Add to Cart</button>
+          </div>
+          <span class="badge card-badge">New</span>
+          <span class="card-dismiss"
+            ><img src="./static/images/close.svg" alt=""
+          /></span>
+        </div>
+
+        <div class="carbon-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-shadow%2522%253E%250A%2520%2520%2509%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2509%253Ch4%2520class%253D%2522card-title%2522%253EHERE%2526NOW%253C%252Fh4%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-description%2522%253EMen%2520Printed%2520Round%2520Neck%2520T-shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price%2522%253ERs.%2520500%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522badge%2520card-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-dismiss%2522%253E%253Cimg%2520src%253D%2522.%252Fstatic%252Fimages%252Fclose.svg%2522%2520alt%253D%2522%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 264px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <div class="divider"></div>
+        <h4 class="heading">Horizontal Card</h4>
+        <div style="align-self: center" class="card-horizontal">
+          <img
+            class="card-horizontal-img"
+            src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg"
+            alt=""
+          />
+          <div class="card-text-horizontal">
+            <h4 class="card-title">HERE&NOW</h4>
+            <p class="card-description">Men Printed Round Neck T-shirt</p>
+            <p class="card-price">Rs. 500</p>
+            <div class="flex-end">
+              <button class="btn btn-primary-outline">Add to Cart</button>
+            </div>
+          </div>
+          <span class="badge card-badge">New</span>
+          <span class="card-dismiss"
+            ><img src="./static/images/close.svg" alt=""
+          /></span>
+        </div>
+
+        <div class="carbon-container">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%2520%2520%2509%253Cimg%2520class%253D%2522card-horizontal-img%2522%2520src%253D%2522%2522%2520alt%253D%2522%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-text-horizontal%2522%253E%250A%2520%2520%2520%2520%2509%253Ch4%2520class%253D%2522card-title%2522%253EHERE%2526NOW%253C%252Fh4%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-description%2522%253EMen%2520Printed%2520Round%2520Neck%2520T-shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2509%253Cp%2520class%253D%2522card-price%2522%253ERs.%2520500%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522badge%2520card-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-dismiss%2522%253E%253Cimg%2520src%253D%2522.%252Fstatic%252Fimages%252Fclose.svg%2522%2520alt%253D%2522%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 100%;
+              height: 264px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+
+        <footer class="footer">
+          <a class="link footer-link" href="./button.html">< Button</a>
+          <a class="link footer-link" href="./grid.html">Grid ></a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
