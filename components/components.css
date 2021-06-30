@@ -1,17 +1,27 @@
 :root {
   /* --primary-color: #2563eb; */
   --primary-color: #1d4ed8;
-  --secondary-color: #111827;
+  --black: #000000;
+  --white: #ffffff;
   --off-white: #f3f4f6;
   --dark-gray: #6b7280;
   --gray: gray;
   --divider-color: rgba(0, 0, 0, 0.1);
-  --white: #ffffff;
+  --rem-1: 0.25rem;
+  --rem-2: 0.5rem;
+  --rem-3: 0.75rem;
+  --rem-4: 1rem;
+  --rem-5: 1.25rem;
+  --rem-6: 1.5rem;
+  --rem-7: 1.75rem;
+  --rem-8: 2rem;
 }
 
 body {
   box-sizing: border-box;
 }
+
+/* Utility Classes */
 
 .flex {
   display: flex;
@@ -25,13 +35,27 @@ body {
   flex-wrap: wrap;
 }
 
-.flex-center {
+.justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
   align-items: center;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.divider {
+  background-color: var(--divider-color);
+  height: 1px;
+  margin: 1rem 0;
+  width: 100%;
 }
 
 /* Avatars */
@@ -183,17 +207,20 @@ body {
 }
 
 .btn-sm {
-  width: 5rem;
+  min-width: 7.5rem;
+  padding: 0.75rem 1.5rem;
   word-wrap: break-word;
 }
 
 .btn-md {
-  width: 7rem;
+  min-width: 10rem;
+  padding: 1rem 1.75rem;
   word-wrap: break-word;
 }
 
 .btn-lg {
-  width: 9rem;
+  min-width: 12.5rem;
+  padding: 1.25rem 2rem;
   word-wrap: break-word;
 }
 
@@ -221,6 +248,7 @@ body {
 .btn-primary {
   background-color: var(--primary-color);
   border-radius: 0.25rem;
+  color: var(--white);
 }
 
 .btn-secondary {
@@ -238,7 +266,8 @@ body {
   background-color: var(--off-white);
   border: 1px solid var(--dark-gray);
   border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
+  min-width: 7rem;
+  padding: 0.75rem 1.75rem;
 }
 
 .float-action {
