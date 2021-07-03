@@ -120,7 +120,7 @@ body {
   font-weight: bold;
   font-size: 0.7rem;
   text-transform: uppercase;
-  width: 30px;
+  width: 40px;
 }
 
 .badge-icon {
@@ -141,13 +141,13 @@ body {
   cursor: pointer;
 }
 
-.badge-icon:active {
+/* .badge-icon:active {
   background-color: #cccccc;
-}
+} */
 
 .icon {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 
 .badge-top {
@@ -155,8 +155,8 @@ body {
   border: 2px solid white;
   top: 0px;
   right: 3px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background: red;
   display: flex;
   justify-content: center;
@@ -182,8 +182,8 @@ body {
   border: 2px solid white;
   bottom: -2px;
   right: 1px;
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
